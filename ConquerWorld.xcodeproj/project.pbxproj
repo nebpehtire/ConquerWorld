@@ -220,6 +220,9 @@
 		32687EAE1FDC8CC600D5895D /* ConquerWorld */ = {
 			isa = PBXGroup;
 			children = (
+				32687F4C1FDDD73200D5895D /* Services */,
+				32687F4B1FDDD72A00D5895D /* Entities */,
+				32687F4A1FDDD71700D5895D /* Views */,
 				32687EAF1FDC8CC600D5895D /* AppDelegate.swift */,
 				32687EB11FDC8CC600D5895D /* ViewController.swift */,
 				32687EB31FDC8CC600D5895D /* Main.storyboard */,
@@ -417,6 +420,27 @@
 				32687F101FDC8E9100D5895D /* FirebaseRemoteConfig.framework */,
 			);
 			path = RemoteConfig;
+			sourceTree = "<group>";
+		};
+		32687F4A1FDDD71700D5895D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		32687F4B1FDDD72A00D5895D /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		32687F4C1FDDD73200D5895D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
