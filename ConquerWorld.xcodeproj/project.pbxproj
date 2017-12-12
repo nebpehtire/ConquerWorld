@@ -78,6 +78,9 @@
 		32687F581FDEE65700D5895D /* Service_Database+Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32687F571FDEE65700D5895D /* Service_Database+Global.swift */; };
 		32687F5A1FDEE7DB00D5895D /* Service_Database+Community.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32687F591FDEE7DB00D5895D /* Service_Database+Community.swift */; };
 		32687F5C1FE0329000D5895D /* location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32687F5B1FE0329000D5895D /* location.swift */; };
+		32687F5E1FE0799A00D5895D /* QuadrantWar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32687F5D1FE0799A00D5895D /* QuadrantWar.swift */; };
+		32687F601FE07B4100D5895D /* UserCW.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32687F5F1FE07B4100D5895D /* UserCW.swift */; };
+		32687F631FE07FC100D5895D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32687F621FE07FC100D5895D /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -156,6 +159,9 @@
 		32687F571FDEE65700D5895D /* Service_Database+Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Service_Database+Global.swift"; sourceTree = "<group>"; };
 		32687F591FDEE7DB00D5895D /* Service_Database+Community.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Service_Database+Community.swift"; sourceTree = "<group>"; };
 		32687F5B1FE0329000D5895D /* location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = location.swift; sourceTree = "<group>"; };
+		32687F5D1FE0799A00D5895D /* QuadrantWar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuadrantWar.swift; sourceTree = "<group>"; };
+		32687F5F1FE07B4100D5895D /* UserCW.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCW.swift; sourceTree = "<group>"; };
+		32687F621FE07FC100D5895D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -439,6 +445,7 @@
 		32687F4A1FDDD71700D5895D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				32687F611FE07F9F00D5895D /* login */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -448,6 +455,8 @@
 			children = (
 				32687F511FDDD9EC00D5895D /* typeAlias.swift */,
 				32687F5B1FE0329000D5895D /* location.swift */,
+				32687F5D1FE0799A00D5895D /* QuadrantWar.swift */,
+				32687F5F1FE07B4100D5895D /* UserCW.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -462,6 +471,14 @@
 				32687F551FDDDDDE00D5895D /* Service_Error.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		32687F611FE07F9F00D5895D /* login */ = {
+			isa = PBXGroup;
+			children = (
+				32687F621FE07FC100D5895D /* LoginViewController.swift */,
+			);
+			path = login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -549,15 +566,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32687F601FE07B4100D5895D /* UserCW.swift in Sources */,
 				32687F5A1FDEE7DB00D5895D /* Service_Database+Community.swift in Sources */,
 				32687EB81FDC8CC600D5895D /* ConquerWorld.xcdatamodeld in Sources */,
 				32687F581FDEE65700D5895D /* Service_Database+Global.swift in Sources */,
+				32687F5E1FE0799A00D5895D /* QuadrantWar.swift in Sources */,
 				32687F561FDDDDDE00D5895D /* Service_Error.swift in Sources */,
 				32687EB21FDC8CC600D5895D /* ViewController.swift in Sources */,
 				32687F5C1FE0329000D5895D /* location.swift in Sources */,
 				32687F541FDDDC2100D5895D /* Service_Database.swift in Sources */,
 				32687F521FDDD9EC00D5895D /* typeAlias.swift in Sources */,
 				32687EB01FDC8CC600D5895D /* AppDelegate.swift in Sources */,
+				32687F631FE07FC100D5895D /* LoginViewController.swift in Sources */,
 				32687F501FDDD9B400D5895D /* Service_Auth.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

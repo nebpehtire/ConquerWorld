@@ -33,6 +33,10 @@ class Service_Database {
     var communityConquer: DatabaseReference {
         return mainRef.child("communityConquer")
     }
+    
+    func globalConquerLoc(_ l: LocationCW) -> DatabaseReference {
+        return globalConquer.child(String(l.indexLat)).child(String(l.indexLong)).child(String(l.decLat)).child(String(l.decLong)).child(String(l.cuadrantLat)).child(String(l.cuadrantLong))
+    }
 }
 
 
@@ -47,7 +51,7 @@ extension Service_Database {
         
         self.userRef.child(uid).child("profile").setValue(profile) { (error, dbreference) in
             if let error = (error as NSError?){
-                
+                onComplete(error.localizedDescription, nil)
             } else {
                 onComplete(nil, dbreference)
             }

@@ -10,7 +10,7 @@ import Foundation
 import CoreLocation
 
 
-struct  locationCW {
+struct  LocationCW {
     private var _indexLat: Int
     private var _decLat: Int
     private var _cuadrantLat: Int
