@@ -37,6 +37,18 @@ struct Service_Error {
                 onComplete("Contraseña demasiado débil. Añade números y letras", nil)
                 break
                 
+            case .credentialAlreadyInUse:
+                onComplete("Ya se está usando esta cuenta",nil)
+                break
+                
+            case .invalidClientID:
+                onComplete("No existe este usuario",nil)
+                break
+                
+            case .missingEmail:
+                onComplete("Email desconocido", nil)
+                break
+            
             default:
                 onComplete("Ha habido un problema para entrar. Prueba de nuevo.", nil)
             }

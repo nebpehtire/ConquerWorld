@@ -75,6 +75,9 @@
 		32687F521FDDD9EC00D5895D /* typeAlias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32687F511FDDD9EC00D5895D /* typeAlias.swift */; };
 		32687F541FDDDC2100D5895D /* Service_Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32687F531FDDDC2100D5895D /* Service_Database.swift */; };
 		32687F561FDDDDDE00D5895D /* Service_Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32687F551FDDDDDE00D5895D /* Service_Error.swift */; };
+		32687F581FDEE65700D5895D /* Service_Database+Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32687F571FDEE65700D5895D /* Service_Database+Global.swift */; };
+		32687F5A1FDEE7DB00D5895D /* Service_Database+Community.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32687F591FDEE7DB00D5895D /* Service_Database+Community.swift */; };
+		32687F5C1FE0329000D5895D /* location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32687F5B1FE0329000D5895D /* location.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -150,6 +153,9 @@
 		32687F511FDDD9EC00D5895D /* typeAlias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = typeAlias.swift; sourceTree = "<group>"; };
 		32687F531FDDDC2100D5895D /* Service_Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service_Database.swift; sourceTree = "<group>"; };
 		32687F551FDDDDDE00D5895D /* Service_Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service_Error.swift; sourceTree = "<group>"; };
+		32687F571FDEE65700D5895D /* Service_Database+Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Service_Database+Global.swift"; sourceTree = "<group>"; };
+		32687F591FDEE7DB00D5895D /* Service_Database+Community.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Service_Database+Community.swift"; sourceTree = "<group>"; };
+		32687F5B1FE0329000D5895D /* location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = location.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -441,6 +447,7 @@
 			isa = PBXGroup;
 			children = (
 				32687F511FDDD9EC00D5895D /* typeAlias.swift */,
+				32687F5B1FE0329000D5895D /* location.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -450,6 +457,8 @@
 			children = (
 				32687F4F1FDDD9B400D5895D /* Service_Auth.swift */,
 				32687F531FDDDC2100D5895D /* Service_Database.swift */,
+				32687F571FDEE65700D5895D /* Service_Database+Global.swift */,
+				32687F591FDEE7DB00D5895D /* Service_Database+Community.swift */,
 				32687F551FDDDDDE00D5895D /* Service_Error.swift */,
 			);
 			path = Services;
@@ -540,9 +549,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32687F5A1FDEE7DB00D5895D /* Service_Database+Community.swift in Sources */,
 				32687EB81FDC8CC600D5895D /* ConquerWorld.xcdatamodeld in Sources */,
+				32687F581FDEE65700D5895D /* Service_Database+Global.swift in Sources */,
 				32687F561FDDDDDE00D5895D /* Service_Error.swift in Sources */,
 				32687EB21FDC8CC600D5895D /* ViewController.swift in Sources */,
+				32687F5C1FE0329000D5895D /* location.swift in Sources */,
 				32687F541FDDDC2100D5895D /* Service_Database.swift in Sources */,
 				32687F521FDDD9EC00D5895D /* typeAlias.swift in Sources */,
 				32687EB01FDC8CC600D5895D /* AppDelegate.swift in Sources */,

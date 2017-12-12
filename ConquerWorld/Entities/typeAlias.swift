@@ -10,3 +10,4 @@ import Foundation
 
 typealias Completion = (_ errorMessage: String?, _ data: AnyObject?) -> Void
 typealias CompletionArray = ( _ errorMessage: String?, _ data: [AnyObject]?) -> Void
+typealias Profile = Dictionary<String, AnyObject>
