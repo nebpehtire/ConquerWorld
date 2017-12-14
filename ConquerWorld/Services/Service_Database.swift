@@ -34,8 +34,14 @@ class Service_Database {
         return mainRef.child("communityConquer")
     }
     
+    
+    //demasiado largo.... buscar otro método
     func globalConquerLoc(_ l: LocationCW) -> DatabaseReference {
         return globalConquer.child(String(l.indexLat)).child(String(l.indexLong)).child(String(l.decLat)).child(String(l.decLong)).child(String(l.cuadrantLat)).child(String(l.cuadrantLong))
+    }
+    
+    func globalCWLoc(_ l: LocationProbeCW) -> DatabaseReference {
+        return globalConquer.child(String(l.latitudCw)).child(String(l.longitudeCW))
     }
 }
 

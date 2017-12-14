@@ -80,15 +80,3 @@ struct  LocationCW {
     }
 }
 
-func returnCuadrant(_ cuadrant: Double) -> Int{
-    switch cuadrant {
-    case 0..<0.25:
-        return 1
-    case 0.25..<0.5:
-        return 2
-    case 0.5..<0.75:
-        return 3
-    default:
-        return 4
-    }
-}

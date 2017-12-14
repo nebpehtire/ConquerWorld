@@ -35,25 +35,32 @@ extension Service_Database {
         }
     }
     
-    
-    func saveLocationByOwnerUID(_ user: UserCW, _ lo: LocationCW, onComplete: @escaping Completion){
-        let profile: Profile = [
-            "ownerUID": user.uid as AnyObject
-        ]
-//        self.globalConquer.child(String(lo.indexLat)).child(String(lo.indexLong)).child(String(lo.decLat)).child(String(lo.decLong)).child(String(lo.cuadrantLat)).child(String(lo.cuadrantLong)).setValue(profile) { (error, dbref) in
+//
+//    func saveLocationByOwnerUID(_ user: UserCW, _ lo: LocationCW, onComplete: @escaping Completion){
+//        let profile: Profile = [
+//            "ownerUID": user.uid as AnyObject
+//        ]
+//        self.globalConquerLoc(lo).setValue(profile) { (error, dbref) in
 //            if let error = (error as NSError?){
-//                onComplete(error.debugDescription,nil)
+//                onComplete(error.debugDescription, nil)
 //            } else {
 //                onComplete(nil, dbref)
 //            }
 //        }
-        self.globalConquerLoc(lo).setValue(profile) { (error, dbref) in
+//    }
+    
+    func saveLocationByOwnerUID(_ _user: UserCW, _ lo: LocationProbeCW, onComplete: @escaping Completion){
+        let profile: Profile = [ "ownerUID": _user.uid as AnyObject]
+        
+        self.globalCWLoc(lo).setValue(profile) { (error, dbref) in
             if let error = (error as NSError?){
-                onComplete(error.debugDescription, nil)
+                print(error.debugDescription)
             } else {
                 onComplete(nil, dbref)
             }
         }
+        
+        
     }
     
     

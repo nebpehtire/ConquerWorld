@@ -81,6 +81,8 @@
 		32687F5E1FE0799A00D5895D /* QuadrantWar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32687F5D1FE0799A00D5895D /* QuadrantWar.swift */; };
 		32687F601FE07B4100D5895D /* UserCW.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32687F5F1FE07B4100D5895D /* UserCW.swift */; };
 		32687F631FE07FC100D5895D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32687F621FE07FC100D5895D /* LoginViewController.swift */; };
+		32687F651FE3353800D5895D /* locationProbe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32687F641FE3353800D5895D /* locationProbe.swift */; };
+		32687F681FE335A400D5895D /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32687F671FE335A400D5895D /* Functions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -162,6 +164,8 @@
 		32687F5D1FE0799A00D5895D /* QuadrantWar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuadrantWar.swift; sourceTree = "<group>"; };
 		32687F5F1FE07B4100D5895D /* UserCW.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCW.swift; sourceTree = "<group>"; };
 		32687F621FE07FC100D5895D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		32687F641FE3353800D5895D /* locationProbe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = locationProbe.swift; sourceTree = "<group>"; };
+		32687F671FE335A400D5895D /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -240,6 +244,7 @@
 		32687EAE1FDC8CC600D5895D /* ConquerWorld */ = {
 			isa = PBXGroup;
 			children = (
+				32687F661FE3359000D5895D /* Tools */,
 				32687F4C1FDDD73200D5895D /* Services */,
 				32687F4B1FDDD72A00D5895D /* Entities */,
 				32687F4A1FDDD71700D5895D /* Views */,
@@ -455,6 +460,7 @@
 			children = (
 				32687F511FDDD9EC00D5895D /* typeAlias.swift */,
 				32687F5B1FE0329000D5895D /* location.swift */,
+				32687F641FE3353800D5895D /* locationProbe.swift */,
 				32687F5D1FE0799A00D5895D /* QuadrantWar.swift */,
 				32687F5F1FE07B4100D5895D /* UserCW.swift */,
 			);
@@ -479,6 +485,14 @@
 				32687F621FE07FC100D5895D /* LoginViewController.swift */,
 			);
 			path = login;
+			sourceTree = "<group>";
+		};
+		32687F661FE3359000D5895D /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				32687F671FE335A400D5895D /* Functions.swift */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -573,6 +587,8 @@
 				32687F5E1FE0799A00D5895D /* QuadrantWar.swift in Sources */,
 				32687F561FDDDDDE00D5895D /* Service_Error.swift in Sources */,
 				32687EB21FDC8CC600D5895D /* ViewController.swift in Sources */,
+				32687F651FE3353800D5895D /* locationProbe.swift in Sources */,
+				32687F681FE335A400D5895D /* Functions.swift in Sources */,
 				32687F5C1FE0329000D5895D /* location.swift in Sources */,
 				32687F541FDDDC2100D5895D /* Service_Database.swift in Sources */,
 				32687F521FDDD9EC00D5895D /* typeAlias.swift in Sources */,
@@ -734,6 +750,7 @@
 					"$(PROJECT_DIR)/ConquerWorld/Firabase/RemoteConfig",
 				);
 				INFOPLIST_FILE = ConquerWorld/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nebpehtire.ConquerWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -765,6 +782,7 @@
 					"$(PROJECT_DIR)/ConquerWorld/Firabase/RemoteConfig",
 				);
 				INFOPLIST_FILE = ConquerWorld/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nebpehtire.ConquerWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
